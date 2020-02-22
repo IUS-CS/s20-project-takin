@@ -1,5 +1,5 @@
 <p align = "center">
-<img src "hellabrunn.de/fileadmin/_processed_/csm_Freisteller_Mishmi-Takin_e16d724f00.png" alt = "Takin Web Order">
+<img src "https://ibb.co/vJLL8qW" alt = "Takin Web Order">
 </p>
 
 Takin is a online order web Application, you can sent food order to your favorite resturants and pick them up when it's ready.
