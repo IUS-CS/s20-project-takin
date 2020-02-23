@@ -1,6 +1,3 @@
-Haseeb Chaudhry - Developer/ front & back
-
+Haseeb Chaudhry - Developer/ Back 
 Kham Mangar - Developer/Back & Front  
-
-Cooper Martin - Developer/Back 
-
+Cooper Martin - Developer/ Front and back

@@ -1,0 +1,514 @@
+[
+  {
+    "Name": "Chancellor's Club",
+    "price": "$4.25",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 1,
+    "Description": "Smoked Turkey, baked Ham, Monterey Jack, Lettuce, Tomato, Bacon and chipotle Ranch on a Hoagie",
+    "": ""
+  },
+  {
+    "Name": "Gus' Italian Sensation",
+    "price": "$4.00",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 2,
+    "Description": "Salami Pepperoni, Baked Ham, Provolone Cheese, Lettuce, Tomato and Banana peprs with Italian Dressing on a Hoagie",
+    "": ""
+  },
+  {
+    "Name": "Grenadier Deluxe",
+    "price": "$4.00",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 3,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Southeast Supreme",
+    "price": "$4.00",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 4,
+    "Description": "Baked Ham, Roast Beef, pepper Jack Cheese, Bacon, Lettuce, Tomato, Banana Peppers and Ranch Dressing on a Hoagie",
+    "": ""
+  },
+  {
+    "Name": "Classic Chicken Salad",
+    "price": "$3.25",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 5,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Traditional Tuna Salad",
+    "price": "$3.25",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 6,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "BLT",
+    "price": "$3.25",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 7,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Pizza Panini",
+    "price": "$4.75",
+    "Categories": "SE Deli Signature sandwich",
+    "ID": 8,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Grilled Cheese",
+    "price": "$2.00",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 9,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Grilled Ham and Cheese",
+    "price": "$2.50",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 10,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Cheese Quesadilla",
+    "price": "$3.00",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 11,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Deluxe cheese Quesadilla",
+    "price": "$3.50",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 12,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "chicken & cheese Quesadilla",
+    "price": "$4.00",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 13,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Fajita Quesadilla",
+    "price": "$4.75",
+    "Categories": "SE Deli Campus Favorites",
+    "ID": 14,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Veggie Wrap",
+    "price": "$3.75",
+    "Categories": "SE Deli Wraps",
+    "ID": 15,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Turkey Bacon Ranch Wrap",
+    "price": "$4.00",
+    "Categories": "SE Deli Wraps",
+    "ID": 16,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Chicken Bacon Ranch Wrap",
+    "price": "$4.00",
+    "Categories": "SE Deli Wraps",
+    "ID": 17,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Caesar Wrap",
+    "price": "$3.25",
+    "Categories": "SE Deli Wraps",
+    "ID": 18,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Chicken Caesar Wrap",
+    "price": "$4.00",
+    "Categories": "SE Deli Wraps",
+    "ID": 19,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Fiesta Fajita Wrap",
+    "price": "$4.75",
+    "Categories": "SE Deli Wraps",
+    "ID": 20,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "1/4 lb. Cheeseburger Basket",
+    "price": "$5.95",
+    "Categories": "Grill Combo",
+    "ID": 21,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "1/4 lb. Bacon Cheeseburger Basket",
+    "price": "$6.45",
+    "Categories": "Grill Combo",
+    "ID": 22,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Grilled Chicken Sandwich Basket",
+    "price": "$5.95",
+    "Categories": "Grill Combo",
+    "ID": 23,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Chicken Tenders",
+    "price": "$5.95",
+    "Categories": "Grill Combo",
+    "ID": 24,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Veggie Burger Basket",
+    "price": "$6.70",
+    "Categories": "Grill Combo",
+    "ID": 25,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "1/4 lb. Hamburger",
+    "price": "$3.50",
+    "Categories": "Grill A la Carte",
+    "ID": 26,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "1/4 lb. Cheeseburger",
+    "price": "$3.75",
+    "Categories": "Grill A la Carte",
+    "ID": 27,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "1/4 lb. Bacon Cheeseburger",
+    "price": "$4.25",
+    "Categories": "Grill A la Carte",
+    "ID": 28,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Double Hamburger",
+    "price": "$5.00",
+    "Categories": "Grill A la Carte",
+    "ID": 29,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Double CheeseBurger",
+    "price": "$5.25",
+    "Categories": "Grill A la Carte",
+    "ID": 30,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Double Bacon CheeseBurger",
+    "price": "$5.75",
+    "Categories": "Grill A la Carte",
+    "ID": 31,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Veggie Burger",
+    "price": "$4.50",
+    "Categories": "Grill A la Carte",
+    "ID": 32,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Grilled Chicken Sandwich",
+    "price": "$3.75",
+    "Categories": "Grill A la Carte",
+    "ID": 33,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "3 chicken Tenders",
+    "price": "$3.75",
+    "Categories": "Grill A la Carte",
+    "ID": 34,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "All Beef Hot Dogs",
+    "price": "$1.85",
+    "Categories": "Grill A la Carte",
+    "ID": 35,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "French Fries",
+    "price": "$1.25",
+    "Categories": "Grill A la Carte",
+    "ID": 36,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Tater Tots",
+    "price": "$1.25",
+    "Categories": "Grill A la Carte",
+    "ID": 37,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Onion Rings",
+    "price": "$1.75",
+    "Categories": "Grill A la Carte",
+    "ID": 38,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Fried Pickles",
+    "price": "$1.75",
+    "Categories": "Grill A la Carte",
+    "ID": 39,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Breakfast Burrito",
+    "price": "$3.95",
+    "Categories": "Breakfast",
+    "ID": 40,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Big Breakfast",
+    "price": "$5.50",
+    "Categories": "Breakfast",
+    "ID": 41,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Pancake Breakfast",
+    "price": "$6.50",
+    "Categories": "Breakfast",
+    "ID": 42,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Omelet Breakfast",
+    "price": "$6.65",
+    "Categories": "Breakfast",
+    "ID": 43,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Egg & Cheese with Biscuit",
+    "price": "$1.95",
+    "Categories": "Breakfast Sanwich",
+    "ID": 44,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Egg & Cheese with Begel",
+    "price": "$2.25",
+    "Categories": "Breakfast Sanwich",
+    "ID": 45,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Egg & Cheese with Croissant",
+    "price": "$2.50",
+    "Categories": "Breakfast Sanwich",
+    "ID": 46,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon & Egg with Biscuit",
+    "price": "$2.30",
+    "Categories": "Breakfast Sanwich",
+    "ID": 47,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon & Egg with Begel",
+    "price": "$2.60",
+    "Categories": "Breakfast Sanwich",
+    "ID": 48,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon & Egg with Croissant",
+    "price": "$2.50",
+    "Categories": "Breakfast Sanwich",
+    "ID": 49,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon, Egg & Cheese Biscuit",
+    "price": "$2.55",
+    "Categories": "Breakfast Sanwich",
+    "ID": 50,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon, Egg & Cheese Begel",
+    "price": "$2.85",
+    "Categories": "Breakfast Sanwich",
+    "ID": 51,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Bacon, Egg & Cheese Croissant",
+    "price": "$3.10",
+    "Categories": "Breakfast Sanwich",
+    "ID": 52,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Sausage",
+    "price": "$0.95",
+    "Categories": "Breakfast A la Carte",
+    "ID": 53,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Toast",
+    "price": "$1.00",
+    "Categories": "Breakfast A la Carte",
+    "ID": 54,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Biscuit",
+    "price": "$1.25",
+    "Categories": "Breakfast A la Carte",
+    "ID": 55,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "English Muffin",
+    "price": "$1.25",
+    "Categories": "Breakfast A la Carte",
+    "ID": 56,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "2 Hashbrowns",
+    "price": "$1.25",
+    "Categories": "Breakfast A la Carte",
+    "ID": 57,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Begel w/cream cheese",
+    "price": "$1.45",
+    "Categories": "Breakfast A la Carte",
+    "ID": 58,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "croissant",
+    "price": "$1.50",
+    "Categories": "Breakfast A la Carte",
+    "ID": 59,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "2 Eggs",
+    "price": "$1.50",
+    "Categories": "Breakfast A la Carte",
+    "ID": 60,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "2 Eggs w/cheese",
+    "price": "$1.75",
+    "Categories": "Breakfast A la Carte",
+    "ID": 61,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "3 slices Bacon",
+    "price": "$1.95",
+    "Categories": "Breakfast A la Carte",
+    "ID": 62,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Pancakes",
+    "price": "$3.25",
+    "Categories": "Breakfast A la Carte",
+    "ID": 63,
+    "Description": "",
+    "": ""
+  },
+  {
+    "Name": "Omlet",
+    "price": "$3.75",
+    "Categories": "Breakfast A la Carte",
+    "ID": 64,
+    "Description": "",
+    "": ""
+  }
+]
