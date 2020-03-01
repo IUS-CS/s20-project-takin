@@ -13,15 +13,30 @@ namespace Takin.Controllers
             return View();
         }
 
+        public ActionResult Menu()
+        {
+            return View();
+        }
+
+        public ActionResult Specials()
+        {
+            return View();
+        }
+
+        public ActionResult Order()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Information about us and our service.";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact us with questions or concerns.";
             return View();
         }
     }
