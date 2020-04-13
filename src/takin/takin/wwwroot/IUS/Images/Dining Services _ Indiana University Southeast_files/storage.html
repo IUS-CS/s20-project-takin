@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://b9b7b1d0-079c-4f4d-b203-e7d4ee6b9e48.rlets.com/static/storage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>CAPTURE THIRD-PARTY DOMAIN STORAGE</title><script>// "rl_campaign" used to be stored in sessionStorage, and that behavior
+    // must be maintained below.
+    // TODO update the campaign module in Capture JS to no longer require
+    // sessionStorage for "rl_campaign".
+    let config = {
+        production: {
+            captureInsightsRoot: 'https://apgb2b-reachcodeandproxy.gannettdigital.com',
+        },
+        qa: {
+            captureInsightsRoot: 'https://apgb2b-reachcodeandproxy-staging.gannettdigital.com',
+        },
+        local: {
+            captureInsightsRoot: 'http://localhost:9999',
+        }
+    };
+
+    function getEnvironment(){
+        if(window.location["host"].indexOf("qa.rlets.com") >= 0){
+            return "qa"
+        }else{
+            return "production"
+        }
+    }
+
+    let environment = getEnvironment();
+
+    let insightsPath = config[environment]["captureInsightsRoot"] + "/capture_logger/api/v1/insights";
+
+    let siteId = window.location["host"].split(".")[0];
+
+
+    function ajax(options) {
+        var url = insightsPath;
+        var method = options.method || 'POST';
+        var payload = options.payload || '';
+        var timeout = options.timeout || 5000;
+
+        if (XMLHttpRequest) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url, true);
+            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.timeout = timeout;
+            xhr.send(JSON.stringify(payload));
+            return;
+        }
+    }
+
+    function now() {
+        if (!Date) { return; }
+
+        if (Date.now) {
+            return Date.now();
+        } else if (Date.prototype.getTime) {
+            return new Date().getTime();
+        }
+    }
+
+    function checkSessionStorage(){
+        try{
+            sessionStorage.getItem("test")
+        }catch(error){
+            var timestamp = now();
+
+            ajax({
+                method: "POST",
+                payload: {
+                    events: "THIRD_PARTY_SESSION_STORAGE_ACCESS_DENIED",
+                    timestamp: timestamp,
+                    siteId: siteId
+                }
+            });
+        }
+    }
+
+    function checkCookieStorage(){
+        try{
+            document.cookie
+        }catch{
+            var timestamp = now();
+
+            ajax({
+                method: "POST",
+                payload: {
+                    events: "THIRD_PARTY_COOKIE_ACCESS_DENIED",
+                    timestamp: timestamp,
+                    siteId: siteId
+                }
+            });
+        }
+    }
+
+    checkSessionStorage();
+    checkCookieStorage();
+
+    function getCookie(key) {
+      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(key).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    }
+
+
+    function setCookie(name, value, days) {
+      var d = new Date;
+      d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
+      if(document.location.protocol === "https:") {
+        document.cookie = name + "=" + value + ";SameSite=None;Secure;path=/;expires=" + d.toGMTString();
+      } else {
+        document.cookie = name + "=" + value + ";SameSite=None;path=/;expires=" + d.toGMTString();
+      }
+    }
+
+    function getItems(keys) {
+      var result = {};
+      keys.forEach(function (key) {
+        try{
+            if (key === "rl_campaign") { result[key] = sessionStorage.getItem(key); }
+            else { result[key] = localStorage.getItem(key) || getCookie(key); }
+        } catch(err) {
+
+        }
+      });
+      return result;
+    }
+
+    function removeItems(keys) {
+      keys.forEach(function (key) {
+        try{
+            if (key === "rl_campaign") { sessionStorage.removeItem(key); }
+            else { localStorage.removeItem(key); }
+        } catch(err){
+
+        }
+      });
+    }
+
+    function setItems(items) {
+      Object.keys(items).forEach(function (key) {
+        try{
+            if (key === "rl_campaign") { sessionStorage.setItem(key, items[key]); }
+            else { localStorage.setItem(key, items[key]); }
+            // We are setting this cookie so that if an impression is tracked later
+            // it will attribute to the correct visitor_id
+            if (key === "visitor_id") { setCookie(key, items[key], 3650); }
+            // For Simpli.Fi visits - we want to ensure that the vendor_user_id (uid)
+            // parameter is being tracked to the correct attribution will occur.
+            if (key === "sifi_user_id") { setCookie(key, items[key], 3650); }
+        } catch(err){
+
+        }
+      });
+    }
+
+    function receiveMessage(evt) {
+      if(!evt.data){
+        return;
+      }
+      var data = JSON.parse(evt.data);
+      var method = data.method;
+      var result;
+
+      if (method === "GET") {
+        result = getItems(data.keys);
+      } else if (method === "REMOVE") {
+        removeItems(data.keys);
+      } else if (method === "SET") {
+        setItems(data.items);
+      }
+
+      evt.source.postMessage(JSON.stringify({
+        id: data.id,
+        result: result
+      }), evt.origin);
+    }
+
+    window.addEventListener("message", receiveMessage);</script></head><body>OK<script>window.parent.postMessage("loaded","*")</script></body></html>

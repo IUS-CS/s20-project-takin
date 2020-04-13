@@ -1,0 +1,95 @@
+/**
+ * Indiana University Southeast
+ * New Albany, IN
+ * Copyright 2016
+ */
+ 
+/** 
+ * Contents
+ */
+ 
+@page {
+    margin: 70px auto 70px auto;
+}
+body #tools,body #campus-stripe-nav,body #site-navigation, body #mobile-site-nav, body #mobile-nav, body #campus-navigation {
+    display: none !important;
+}
+body #site-name {
+    font-size: 20px !important;
+    left: 133px !important;
+    top: 85px !important;
+}
+body .site-name-sub {
+    font-size: 15px !important;
+}
+.titlebar-type-5 #site-header-name #name-type-5 .sub-container h2, .titlebar-type-5 #site-header-name #name-type-5 .sub-container h1 {
+    margin-top: 65px;
+    display: block;
+    background: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.titlebar-type-5 #site-header-name #name-type-5 .sub-container #site-name a span {
+    color: #000000;
+}
+#branding-bar {
+    height: 67px;
+    /*display: none;*/
+    position: relative;
+}
+#branding-bar h1 a {
+    color: #7A1705;
+}
+#toogles {
+    display: none;
+}
+#toggles a.button, #toggles a.button:hover {
+    display: none;
+}
+#search {
+    display: none;
+}
+#campus-navigation {
+    display: none;
+}
+#site-header-image {
+    display: none;
+}
+#site-navigation {
+    display: none;
+}
+.content-container-three-column aside.column-one {
+    display: none;
+}
+.content-container-three-column article.column-two {
+    width: 100%;
+    margin-top: 135px;
+    /*margin-top: 70px;*/
+}
+.breadcrumb {
+    display: none;
+}
+div.page-name h3 {
+    margin-left: 0;
+    border-bottom: 1px solid black;
+}
+.main-body-content {
+    padding-left: 0;
+}
+.main-body-content p {
+    page-break-after: always;
+}
+/* To turn off events, news, quick links, and skirt belts */
+#full-width-9, #full-width-10, #full-width-11, #campus-skirt {
+    display: none;
+}
+#footer {
+    border-top: 1px solid black;
+}
+#footer img {
+    display: none;
+}
+/* Turn off Chat Now */
+#livechat-compact-container, #livechat-eye-catcher, #livechat-full, #lc_invite_layer, #lc_overlay_layer, #mm_sync_back_ground {
+    display: none !important;
+}
