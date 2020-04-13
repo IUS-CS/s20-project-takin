@@ -1,0 +1,21 @@
+/**
+ * Indiana University at New Albany
+ * Copyright 2015
+ */
+ 
+aside.column-one {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+article.column-two {
+    width: 73%;
+    display: inline-block;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+aside.column-three {
+    display:none;
+    box-sizing: border-box;
+}
