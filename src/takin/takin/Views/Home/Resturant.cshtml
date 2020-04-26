@@ -3,7 +3,6 @@
 
 @{
     ViewBag.Title = "Menu";
-    var IUSLogoLarge = "Shared/IUS/Images/trident-large.png";
     
 }
 
@@ -14,10 +13,17 @@
     <title>List of Resturants</title>
     
 </head>
-<img src="@IUSLogoLarge" alt="IU logo">
 <body>
-<div>
+   
+<main class="flex">
+    <div class="card">
+        <h1>IUS Dining</h1>
+        <img src="~/Images/trident-large.png" alt="IU Logo" />
+        <p class="lead">IUS Dining.</p>
+        <input type="button" value="Order" onclick="location.href='menu'" />
+
+    </div>
     
-</div>
+</main>
 </body>
 </html>
