@@ -2,9 +2,8 @@
 @model takin.Views.Home.Store
 
 @{
-    ViewBag.Title = "Menu";
-    var IUSLogoLarge = "Shared/IUS/Images/trident-large.png";
-    
+    ViewBag.Title = "Resturants";
+
 }
 
 <!DOCTYPE html>
@@ -12,12 +11,69 @@
 <html>
 <head>
     <title>List of Resturants</title>
-    
+
 </head>
-<img src="@IUSLogoLarge" alt="IU logo">
 <body>
-<div>
-    
-</div>
+
+    <main class="flex">
+        <div class="col-md-6">
+            <img src="~/Images/trident-large.png" alt="IU Logo" width="50" height="50" />
+            <h3>IUS Commons Food Court</h3>
+            <img src="~/Images/commons-pantry.jpg" alt="IU Logo" width="278" height="226" />
+            <p class="lead">
+                Commons Food Court
+                Located on the lower level of University Center North, the Commons Food Court's normal operating hours are Monday through Thursday from 7:30 a.m. to 7 p.m., Friday from 7:30 a.m. to 2 p.m. and is closed on Saturdays and Sundays.
+            </p>
+            <p> The Commons Food Court offers breakfast cooked to order, a salad bar, and hot luncheon specials including hot and cold grab'n'go items. Also available is the hot soup of the day, panini sandwiches, desserts, snacks, and fountain and bottled beverages. Some foods are available only during specific times listed below:</p>
+            <p>
+            <p><strong>Fall &amp; Spring Hours</strong> <br>Monday - Thursday 7:30am - 7:00pm <br>Deli counter will be available from 10:00am until 4:00pm <br>Friday 7:30am - 2:00pm</p>
+            </p>
+
+
+            <input type="button" value="Order" onclick="location.href='menu'" />
+
+        </div>
+
+        <div class="col-md-6">
+            <img src="~/Images/trident-large.png" alt="IU Logo" width="50" height="50" />
+            <h3>University Grounds Coffee Shop</h3>
+            <img src="~/Images/university-grounds.jpg" alt="IU Logo" width="283" height="138" />
+            <p class="lead">
+                Commons Food Court
+                Located on the lower level of University Center North, the Commons Food Court's normal operating hours are Monday through Thursday from 7:30 a.m. to 7 p.m., Friday from 7:30 a.m. to 2 p.m. and is closed on Saturdays and Sundays.
+            </p>
+            <p> <p>Located on the ground floor of University Center South across from the IU Southeast Bookstore, University Grounds Coffee Shop's normal operating hours are Monday through Thursday from 7:30 a.m. to 7 p.m., Friday from 7:30 a.m. to 1:30 p.m., and is closed Saturday, Sunday, and holidays during the academic school year.<br> <br> University Grounds Coffee Shop features John Conti Coffee and offers coffees, espresso, teas, blended drinks and smoothies, bottled soft drinks and snacks.</p> <p>
+            <p><p><strong>Fall &amp; Spring Hours</strong> <br>Monday - Thursday 7:30am - 7:00pm <br>Friday 7:30am - 1:30pm</p>    </p>
+
+
+            <input type="button" value="Order" onclick="location.href='menu'" />
+
+        </div>
+    </main>
+
+    <main class="flex">
+        <div class="col-md-6">
+            <h3>Subway</h3>
+            <img src="~/Images/subway.png" alt="IU Logo" width="339" height="89" />
+            <p>
+            <p><strong>Fall &amp; Spring Hours</strong> <br>Monday - Thursday 10:30am - 8:00pm <br>Friday 10:30am - 4:00pm</p>
+            </p>
+
+
+            <input type="button" value="Order" onclick="location.href='menu'" />
+
+        </div>
+
+        <div class="col-md-6">
+            <h3>Papa John's</h3>
+            <img src="~/Images/papa-john.png" alt="IU Logo" width="288" height="162" />
+            <p>
+            <p><p><strong>Fall &amp; Spring Hours</strong> <br>Monday - Thursday 10:30am - 8:00pm <br>Friday 10:30am - 4:00pm</p>    </p>
+
+
+            <input type="button" value="Order" onclick="location.href='menu'" />
+
+        </div>
+    </main>
 </body>
 </html>
